@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('GIT clone the ansible eks  tf code') {
             steps {
-                git branch: 'main', url: 'https://github.com/ritviksaxena4/pro-ansible-eks-tf.git'
+                git branch: 'main', url: 'https://github.com/Shubhams033/my_pro_app1.git'
             }
         }
         stage('Terraform Init') {
