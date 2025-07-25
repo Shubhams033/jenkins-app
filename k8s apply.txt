@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Apply the deployment file') {
             steps {
-                sh 'kubectl apply -f deployment.yaml'
+                sh 'kubectl apply -f kubernates.yaml'
             }
         }
         stage('sleep 5 for deployment.yaml') {
@@ -34,7 +34,7 @@ pipeline {
         }
         stage('Apply the service.yaml file') {
             steps {
-                sh 'kubectl apply -f service.yaml'
+                sh 'kubectl apply -f service1.yaml'
             }
         }
     }
